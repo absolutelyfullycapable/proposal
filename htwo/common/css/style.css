@@ -1,0 +1,141 @@
+@charset "UTF-8";
+@import url(./reset.css);
+
+
+img, a {display: block;}
+
+
+#subBody > section {position: relative; z-index: 2;}
+.motion {transform: translateY(70px); opacity: 0;}
+
+
+/* quick */
+.quick {position: fixed; bottom: 20px; right: 20px; width: 64px; height: 64px; display: block; overflow: hidden; z-index: 50;}
+.quick video {width: 100%; height: 100%; border-radius: 500px;}
+.quick::after {content: ""; width: 8px; height: 8px; border-radius: 50px; display: block; background: #00A2CE; position: absolute; top: 0; right: 0;}
+
+
+/* header */
+header {position: fixed; top: 0; left: 0; width: 100%; height: 100px; background: #fff; display: flex; align-items: center; padding: 0 60px; justify-content: space-between; z-index: 50; transform: translateY(-120px); transition: background .3s ease-out;}
+header .logo {width: 125px; height: 44px; display: block; background: url("../images/logo.svg"); transition: background .3s ease-out;}
+header nav {position: absolute; top: 50%; transform: translate(-50%, -50%) rotate(0.03deg); left: 50%; font-size: 19px; font-family: "HDHarmonyB"; display: flex; gap: 60px;}
+header nav a {transition: background .3s ease-out;}
+header .util {width: 393px; height: 38px; display: block; background: url("../images/util.svg"); transition: background .3s ease-out;}
+
+header.wht {background: transparent;}
+header.wht .logo {background: url("../images/logo-wht.svg");}
+header.wht nav a {color: #fff;}
+header.wht .util {background: url("../images/util-wht.svg");}
+
+
+/* kv */
+.kv {position: fixed !important; top: 0; left: 0; z-index: 1 !important; width: 100%; height: 100vh;}
+.kv .inner {display: flex; justify-content: space-between; position: absolute; bottom: 208px; left: 50%; z-index: 1; width: 1195px; margin: 0 auto; transform: translateX(-50%);}
+.kv .inner .left {width: 325px;}
+.kv .inner .left img + img {margin-top: 28px;}
+.kv .inner .right {width: 380px; margin-top: 82px;}
+.kv .inner .right img + img {margin-top: 40px;}
+
+.kv .bg {position: absolute; top: 50%; left: 50%; width: 100vw; height: 100vh; transform: translate(-50%, -50%);}
+.kv .bg img {position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; transform: translate(-50%, -50%) scale(1.2); object-fit: cover; transition: transform 1s ease-out;}
+.kv.active .bg img {transform: translate(-50%, -50%) scale(1);}
+.kv .dimd {position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #000; opacity: 0;}
+
+
+/* value chain */
+.value-chain {margin-top: 100vh; padding: 184px 0; background-color: #fff;}
+.value-chain .inner {display: flex; justify-content: space-between; width: 1195px; margin: 0 auto;}
+.value-chain .inner .left img + img {margin-top: 12px;}
+
+
+/* fixed bg */
+.fixed-bg {height: 460px; background: url("../images/sub1-fixed-bg.jpg") no-repeat center center / cover; background-attachment: fixed;}
+
+
+/* electrolysis */
+.electrolysis {background-color: #fff; padding-bottom: 180px;}
+.electrolysis .inner .tit-area {display: flex; justify-content: space-between; width: 1195px; margin: 0 auto; padding: 184px 0 94px;}
+.electrolysis .inner .tit-area .left img + img {margin-top: 12px;}
+
+.electrolysis .inner .list-area {display: flex; justify-content: center; align-items: center; column-gap: 12px; height: 100vh;}
+.electrolysis .inner .list-area > div {width: 894px; height: 900px; transform: translateY(100px); opacity: 0; overflow: hidden;}
+.electrolysis .inner .list-area .left {position: relative; background: url("../images/sub1-elec-left-bg.jpg") no-repeat center center / cover; border-radius: 20px;}
+.electrolysis .inner .list-area .left .progress-box {position: absolute; bottom: 80px; left: 80px; width: 734px; height: 2px; background-color: rgba(255, 255, 255, 0.2);}
+.electrolysis .inner .list-area .left .progress-box .progress-thumb {position: absolute; top: 0; left: 0; width: 0; height: 2px; background-color: #fff;}
+.electrolysis .inner .list-area .right {position: relative; overflow: visible;}
+.electrolysis .inner .list-area .right .list-item {position: absolute; top: 150%; left: 0; border-radius: 20px; overflow: hidden;}
+.electrolysis .inner .list-area .right .list-item:first-child {top: 0;}
+
+
+/* core value */
+.core-value {padding: 200px 0; background-color: #F1F4F8;}
+.core-value .inner {width: 1498px; margin: 0 auto;}
+.core-value .inner .tit-area {display: flex; justify-content: center; column-gap: 334px;}
+.core-value .inner .tit-area .left img + img {margin-top: 12px;}
+
+.core-value .inner .list-area {position: relative; width: 1498px; height: 1022px; margin-top: 100px;}
+.core-value .inner .list-area .list-item {position: absolute; padding: 60px 40px 40px; border-radius: 12px; overflow: hidden; transition: background .5s ease-out; transform: translateY(100px); opacity: 0;}
+.core-value .inner .list-area .list-item:first-child {top: 0; left: 0; width: 894px; height: 450px; background: url("../images/sub1-cv-item1.jpg") no-repeat center center / 100%;}
+.core-value .inner .list-area .list-item:nth-child(2) {top: 0; right: 0; width: 592px; height: 670px; background: url("../images/sub1-cv-item2.jpg") no-repeat center center / 100%;}
+.core-value .inner .list-area .list-item:nth-child(3) {top: 462px; left: 0; width: 894px; height: 560px; background: url("../images/sub1-cv-item3.jpg") no-repeat center center / 100%;}
+.core-value .inner .list-area .list-item:nth-child(3)::after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100%; height: 324px; background: linear-gradient(0deg,rgba(0, 0, 0) 0%, transparent 100%); opacity: .5;}
+.core-value .inner .list-area .list-item:last-child {top: 682px; right: 0; width: 592px; height: 340px; background-color: #00A2CE;}
+.core-value .inner .list-area .list-item:not(:last-child):hover {background-size: 115%; cursor: pointer;}
+.core-value .inner .list-area .list-item .desc-box {display: flex; flex-direction: column; align-items: flex-start; position: relative; z-index: 1; height: 100%;}
+.core-value .inner .list-area .list-item .desc-box img:nth-child(2) {margin: auto 0 24px;}
+
+
+/* connectivity */
+.connectivity {padding-top: 150px; background-color: #fff;}
+.connectivity .inner .tit-area {display: flex; justify-content: center; column-gap: 389px;}
+.connectivity .inner .tit-area .left img + img {margin-top: 12px;}
+
+.connectivity .inner .tab-area {width: 1800px; margin: 100px auto 0; border-radius: 24px; overflow: hidden;}
+.connectivity .inner .tab-area .tab-box {display: flex; justify-content: center; align-items: center;}
+.connectivity .inner .tab-area .tab-box a {width: 50%; padding: 21.5px 0; text-align: center; background-color: #00A2CE; color: #fff; font-size: 18px; transition: .3s ease-out;}
+.connectivity .inner .tab-area .tab-box a.on {background: #F1F4F8; color: #000;}
+
+.connectivity .inner .tab-area .cont-box {background-color: #F1F4F8;}
+.connectivity .inner .tab-area .cont-box .cont-item {display: none;}
+.connectivity .inner .tab-area .cont-box .cont-item.on {display: block;}
+.connectivity .inner .tab-area .cont-box .cont-item img {width: 100%; margin: 0 auto;}
+
+.connectivity .inner .tab-area .cont-box .cont-item:has(.gif) {position: relative;}
+.connectivity .inner .tab-area .cont-box .cont-item:has(.gif) img:not(.gif) {position: relative; z-index: 1;}
+.connectivity .inner .tab-area .cont-box .cont-item:has(.gif) .gif {position: absolute; top: 119px; left: 50%; width: 1030px; transform: translateX(-50%);}
+
+
+/* possibility */
+.possibility {padding: 200px 0 150px; background-color: #fff;}
+.possibility .inner {display: flex; justify-content: center; column-gap: 164px;}
+.possibility .inner .left {border-radius: 12px; overflow: hidden; cursor: pointer;}
+.possibility .inner .left img {display: none;}
+.possibility .inner .left img.on {display: block;}
+
+.possibility .inner .right > img:nth-of-type(2) {margin: 28px 0 40px;}
+.possibility .inner .right .tab-area {margin-top: 80px;}
+.possibility .inner .right .tab-area .tab-box {display: flex; align-items: center; column-gap: 24px;}
+.possibility .inner .right .tab-area .tab-box a, .possibility .inner .right .tab-area .tab-box p {padding-bottom: 14px; font-size: 20px; color: #999;}
+.possibility .inner .right .tab-area .tab-box a span {position: relative;}
+.possibility .inner .right .tab-area .tab-box a.on span {color: #000;}
+.possibility .inner .right .tab-area .tab-box a.on span::after {content: ""; display: block; position: absolute; bottom: -14px; left: 0; width: 100%; height: 2px; background-color: #000;}
+.possibility .inner .right .tab-area .cont-box {margin-top: 50px;}
+.possibility .inner .right .tab-area .cont-item {display: none;}
+.possibility .inner .right .tab-area .cont-item.on {display: block;}
+
+
+/* etc */
+.etc {padding-bottom: 60px; background-color: #fff;}
+.etc .inner {display: flex; column-gap: 299px; width: 1800px; margin: 0 auto; padding: 134px 151px; border-radius: 24px; background: url("../images/sub1-etc-bg.jpg") no-repeat center center / cover; overflow: hidden;}
+.etc .inner .left .btn-wrap a {padding: 50px; border-radius: 12px; overflow: hidden;}
+.etc .inner .left .btn-wrap a:first-of-type {background-color: rgba(13, 41, 117, .9);}
+.etc .inner .left .btn-wrap a:last-of-type {margin-top: 12px; background-color: rgba(0, 162, 206, .9);}
+
+.etc .inner .right {margin-top: 130px;}
+.etc .inner .right a {width: fit-content; margin-top: 40px; padding: 14px 24px; border: 1px solid #fff; font-size: 16px; color: #fff; transition: 0.5s ease-out;}
+.etc .inner .right a:hover {background-color: #fff; color: #000;}
+
+
+/* footer */
+footer {position: relative; z-index: 1; background-color: #000;}
+footer img {margin: 0 auto;}
