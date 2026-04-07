@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url(./reset.css);
+
+a {display: block;}
+img {display: block; width: 100%;}
+
+header {position: fixed; top: 0; left: 0; z-index: 1; width: 100%; height: 153px; background-color: #fff; border-bottom: 1px solid rgba(0, 0, 0, .1); transition-duration: .5s;}
+
+header .top {position: relative; top: 0; background-color: #F5F5F5; transition-duration: .5s;}
+header .top .inner {display: flex; justify-content: space-between; align-items: center; max-width: 1920px; height: 57px; margin: 0 auto; padding: 0 80px;}
+header .top .inner img:first-child {width: 700px;}
+header .top .inner img:last-child {width: 140px;}
+
+header > .inner {display: flex; align-items: center; max-width: 1920px; margin: 0 auto; padding: 16px 80px; transition-duration: .5s;}
+header > .inner h1 a {width: 145px; transition-duration: .5s;}
+header > .inner .gnb {position: relative; width: 1126px; margin: 0 64px 0 auto; transition-duration: .5s;}
+header > .inner .gnb a {position: absolute; top: 0; left: 109px; width: 135px; height: 25px;}
+header > .inner .util {width: 84px; transition-duration: .5s;}
+
+header .menu {position: absolute; top: 153px; left: 0; width: 100%; opacity: 0; transition-duration: .5s; pointer-events: none;}
+header .menu::before {content: ""; display: block; position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 86px; background-color: #213F99;}
+header .menu::after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #F0F0F0;}
+header .menu.on {opacity: 1;}
+header .menu .inner {position: relative; z-index: 1; max-width: 1920px; margin: 0 auto;}
+header .menu .inner::before {content: ""; display: block; position: absolute; top: -12px; left: 716px; width: 20px; height: 14px; background: url("../images/ico-arrow.svg") no-repeat center center / cover;}
+
+header.active {height: 64px;}
+header.active .top {top: -57px;}
+header.active > .inner {padding: 12px 80px; transform: translateY(-57px);}
+header.active > .inner h1 a {width: 91px;}
+header.active > .inner .gnb {width: 872px;}
+header.active > .inner .gnb a {left: 82px; width: 108px; height: 20px;}
+header.active > .inner .util {width: 60px;}
+
+header.active .menu {top: 64px;}
+header.active .menu .inner::before {left: 952px;}
+
+.content {padding: 193px 0 188px;}
+.content .inner {max-width: 1920px; margin: 0 auto; padding: 0 80px;}
+
+/* main */
+.content .top-stories .inner {padding-right: 0;}
+
+.content .photo {margin-top: 80px;}
+.content .video {margin: 80px 0 120px;}
+.content .photo .flex, .content .video .flex {display: flex; justify-content: center; column-gap: 40px; margin-top: 32px;}
+
+.content .competitions {background-color: #213F99;}
+
+.content .about {height: 474px; padding-top: 64px; background: url("../images/img-about-bg.jpg") no-repeat center center / cover;}
+.content .about .inner {position: relative; height: 100%;}
+.content .about .tit {width: 414px;}
+.content .about .desc {position: absolute; bottom: 72px; right: 241px; width: 699px;}
+
+.content .more {margin-top: 120px;}
+
+/* main2 */
+.content .events .inner {padding-right: 0;}
+
+.main2 .content .competitions {margin-bottom: 80px;}
+
+.content .floating-btn {position: fixed; bottom: 20px; right: 40px; width: 80px; height: 80px; border-radius: 100px; background-color: #000; transition-duration: .5s; overflow: hidden;}
+.content .floating-btn .flex {display: flex; align-items: center; column-gap: 12px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 34px; transition-duration: .5s;}
+.content .floating-btn .flex > img {width: 34px;}
+.content .floating-btn .flex span {display: block; width: 0; overflow: hidden; transition-duration: .5s;}
+.content .floating-btn .flex span img {width: 97px;}
+.content .floating-btn > img {position: absolute; top: 0; left: 0; z-index: -1; width: auto; height: 100%; opacity: 1; transition-duration: .5s;}
+
+.content .floating-btn:hover {width: 187px;}
+.content .floating-btn:hover .flex {left: 20px; transform: translate(0, -50%); width: 143px;}
+.content .floating-btn:hover .flex span {width: 97px;}
+.content .floating-btn:hover > img {opacity: 0;}
+
+.layer-popup {position: fixed; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; pointer-events: none;}
+.layer-popup.active {pointer-events: initial;}
+.layer-popup .item {position: absolute; right: -100%; z-index: 1; height: 100%; transition: 1.3s ease-out;}
+.layer-popup .item1 {z-index: 3;}
+.layer-popup .item2 {z-index: 2;}
+.layer-popup .item3 {z-index: 1;}
+.layer-popup .item3 .btn-close {position: absolute; top: 20px; left: -72px;}
+.layer-popup .item .item-img {height: 100vh;}
+.layer-popup.active .item1 {right: 0;}
+.layer-popup .bg {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .6); visibility: hidden; opacity: 0; transition-duration: .5s;}
+.layer-popup .bg.active {visibility: visible; opacity: 1;}
+
+footer a {width: calc(100% - 33px); height: 100%; margin: 0 auto;}

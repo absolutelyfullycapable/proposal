@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./common/css/swiper.css" />
+    <link rel="stylesheet" href="./common/css/fonts.css" />
+    <link rel="stylesheet" href="./common/css/style-mainA.css" />
+    <script src="./common/js/jquery-1.8.2.min.js"></script>
+    <script src="./common/js/swiper.min.js"></script>
+    <script src="./common/js/gsap.min.js"></script>
+    <script src="./common/js/ScrollToPlugin.min.js"></script>
+    <script src="./common/js/ScrollTrigger.min.js"></script>
+    <script src="./common/js/mainA.js"></script>
+    <title>오텍캐리어 제안</title>
+  </head>
+
+  <body class="scrl-lock">
+    <!-- header -->
+    <header>
+      <div class="inner">
+        <a href="javascript:" class="logo">
+          <img src="./common/images/main-logo.svg" alt="">
+        </a>
+
+        <div class="gnb-wrap">
+          <a href="javascript:"><span>오텍캐리어</span></a>
+          <a href="javascript:"><span>제품&솔루션</span></a>
+          <a href="javascript:"><span>R&D</span></a>
+          <a href="javascript:"><span>ESG</span></a>
+          <a href="javascript:"><span>미디어 라이브러리</span></a>
+          <a href="javascript:"><span>고객지원</span></a>
+
+          <div class="gnb-menu-area">
+            <div class="inner">
+              <img src="./common/images/main-header-gnb-menu.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="util-wrap">
+          <div class="shop">
+            <a href="javascript:">
+              <img src="./common/images/main-header-util-shop.svg" alt="" class="active">
+              <img src="./common/images/main-header-util-shop-on.svg" alt="">
+            </a>
+            <div class="shop-pop">
+              <img src="./common/images/main-header-util-shop-pop.svg" alt="">
+            </div>
+          </div>
+          <div class="menu">
+            <a href="javascript:">
+              <img src="./common/images/main-header-util-menu.svg" alt="" class="active">
+              <img src="./common/images/main-header-util-menu-on.svg" alt="">
+            </a>
+            <div class="menu-pop">
+              <div class="menu-head">
+                <div class="inner">
+                  <a href="javascript:" class="menu-pop-close"></a>
+                  <img src="./common/images/main-header-util-menu-head.svg" alt="">
+                </div>
+              </div>
+              <div class="menu-body">
+                <div class="inner"><img src="./common/images/main-header-util-menu-body.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- content -->
+    <div id="mainBody">
+      <!-- intro -->
+      <section class="intro-wrap">
+        <video src="./common/videos/main-Intro.mp4" muted></video>
+        <img src="./common/images/main-intro-skip.svg" alt="">
+      </section>
+
+      <!-- kv -->
+      <section class="kv-wrap">
+        <div class="kv-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+              <div class="tit-area">
+                <img src="./common/images/main-kv-desc1.svg" alt="">
+                <p><img src="./common/images/main-kv-slide1-tit1.svg" alt=""></p>
+                <p><img src="./common/images/main-kv-slide1-tit2.svg" alt=""></p>
+                <p><img src="./common/images/main-kv-slide1-tit3.svg" alt=""></p>
+              </div>
+              <div class="bg-area">
+                <div class="dimd"></div>
+                <video src="./common/videos/main-kv-bg1.mp4" muted loop></video>
+              </div>
+            </div>
+            <div class="swiper-slide slide2">
+              <div class="tit-area">
+                <img src="./common/images/main-kv-desc2.svg" alt="">
+                <p><img src="./common/images/main-kv-slide2-tit1.svg" alt=""></p>
+                <p><img src="./common/images/main-kv-slide2-tit2.svg" alt=""></p>
+                <p><img src="./common/images/main-kv-slide2-tit3.svg" alt=""></p>
+              </div>
+              <div class="bg-area">
+                <div class="dimd"></div>
+                <video src="./common/videos/main-kv-bg2.mp4" muted loop></video>
+              </div>
+            </div>
+            <div class="swiper-slide slide3">
+              <div class="tit-area">
+                <img src="./common/images/main-kv-desc3.svg" alt="">
+                <p><img src="./common/images/main-kv-slide3-tit1.svg" alt=""></p>
+                <p><img src="./common/images/main-kv-slide3-tit2.svg" alt=""></p>
+                <p><img src="./common/images/main-kv-slide3-tit3.svg" alt=""></p>
+              </div>
+              <div class="bg-area">
+                <div class="dimd"></div>
+                <video src="./common/videos/main-kv-bg3.mp4" muted loop></video>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-util-box">
+            <div class="prev">
+              <img src="./common/images/main-kv-swiper-prev.svg" alt="">
+            </div>
+            <div class="next">
+              <img src="./common/images/main-kv-swiper-next.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about-wrap">
+        <div class="mask">
+          <div class="about-intro-area">
+            <div class="tit">
+              <img src="./common/images/main-about-tit1.svg" alt="">
+            </div>
+            <div class="tit">
+              <img src="./common/images/main-about-tit2.svg" alt="">
+            </div>
+            <div class="tit">
+              <img src="./common/images/main-about-tit3.svg" alt="">
+            </div>
+          </div>
+          <div class="about-intro-mask-area">
+            <div class="inner">
+              <img src="./common/images/main-about-tit1-wht.svg" alt="">
+              <img src="./common/images/main-about-tit3-wht.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="about-item-area">
+          <div class="desc-box">
+            <img src="./common/images/main-about-item-desc.svg" alt="">
+            <img src="./common/images/main-about-item-btn.svg" alt="">
+            <img src="./common/images/main-about-item-tag.svg" alt="">
+          </div>
+          <div class="bg-box">
+            <div class="dimd"></div>
+            <video src="./common/videos/main-about-item-bg.mp4" muted loop autoplay></video>
+          </div>
+        </div>
+      </section>
+
+      <!-- solution -->
+      <section class="sol-wrap">
+        <div class="tit-area">
+          <p>
+            <span>세상을</span>
+            <span>바꾸는</span>
+          </p>
+          <p>
+            <span>오텍캐리어의</span>
+            <span>차세대</span>
+          </p>
+          <p>
+            <span>에너지</span>
+            <span>솔루션</span>
+          </p>
+        </div>
+        <div class="desc-area">
+          <div class="inner">
+            <img src="./common/images/main-sol-tit.svg" alt="" class="tit">
+            <img src="./common/images/main-sol-desc-list.svg" alt="" class="desc">
+          </div>
+          <div class="dimd"></div>
+        </div>
+      </section>
+
+      <!-- solution swiper -->
+      <section class="sol-swiper-wrap">
+        <div class="inner">
+          <div class="sol-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide1">
+                <div class="desc">
+                  <img src="./common/images/main-sol-swiper-cont1.png" alt="">
+                </div>
+                <div class="bg">
+                  <img src="./common/images/main-sol-swiper-bg1.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide slide2">
+                <div class="desc">
+                  <img src="./common/images/main-sol-swiper-cont2.png" alt="">
+                </div>
+                <div class="bg">
+                  <img src="./common/images/main-sol-swiper-bg2.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide slide3">
+                <div class="desc">
+                  <img src="./common/images/main-sol-swiper-cont3.png" alt="">
+                </div>
+                <div class="bg">
+                  <img src="./common/images/main-sol-swiper-bg3.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide slide4">
+                <div class="desc">
+                  <img src="./common/images/main-sol-swiper-cont4.png" alt="">
+                </div>
+                <div class="bg">
+                  <img src="./common/images/main-sol-swiper-bg4.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-util">
+              <div class="fraction">
+                <p class="current">01</p>
+                <p class="total">04</p>
+              </div>
+              <div class="swiper-pagination"></div>
+              <a href="javascript:">
+                <img src="./common/images/main-sol-swiper-util.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-area">
+          <div class="dimd"></div>
+          <video src="./common/videos/main-sol-swiper-bg.mp4" muted autoplay loop></video>
+        </div>
+      </section>
+
+      <!-- footprint -->
+      <section class="fp-wrap">
+        <div class="inner">
+           <img src="./common/images/main-fp-txt.svg" alt="">
+        </div>
+        <div class="img-area">
+          <div class="left">
+            <img src="./common/images/main-fp-left.png" alt="">
+          </div>
+          <div class="center">
+            <div class="tit-box">
+              <img src="./common/images/main-fp-tit.svg" alt="">
+              <img src="./common/images/main-fp-desc.svg" alt="">
+              <img src="./common/images/main-fp-btn.svg" alt="">
+            </div>
+            <div class="bg-box">
+              <div class="dimd"></div>
+              <img src="./common/images/main-fp-bg.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <img src="./common/images/main-fp-right.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- products -->
+      <section class="prod-wrap">
+        <div class="conts-area">
+          <div class="left">
+            <img src="./common/images/main-prod-tit.svg" alt="" class="tit">
+            <div class="input-box">
+              <input type="text" placeholder="제품을 검색하세요.">
+              <img src="./common/images/main-prod-keywords.svg" alt="" class="keywords">
+            </div>
+            <img src="./common/images/main-prod-btn.svg" alt="" class="btn">
+          </div>
+          <div class="right">
+            <img src="./common/images/main-prod-item1.png" alt="">
+            <img src="./common/images/main-prod-item2.png" alt="">
+            <img src="./common/images/main-prod-item3.png" alt="">
+          </div>
+        </div>
+        <div class="bg-area">
+          <video src="./common/videos/main-prod-bg.mp4" muted autoplay loop></video>
+          <div class="dimd"></div>
+        </div>
+      </section>
+
+      <!-- sustainability -->
+      <section class="sustain-wrap">
+        <div class="sustain-intro-area">
+          <div class="txt-box">
+            <p><img src="./common/images/main-sustain-tit1.svg" alt="" class="tit1"></p>
+            <div>
+              <p><img src="./common/images/main-sustain-tit2.svg" alt="" class="tit2"></p>
+              <p><img src="./common/images/main-sustain-tit3.svg" alt="" class="tit3"></p>
+            </div>
+          </div>
+        </div>
+        <div class="sustain-list-area">
+          <div class="inner">
+            <div class="list-item item1">
+              <div class="list-txt-box">
+                <img src="./common/images/main-sustain-list-tit.svg" alt="">
+                <img src="./common/images/main-sustain-list-btn.svg" alt="">
+              </div>
+              <div class="bg">
+                <video src="./common/videos/main-sustain-bg.mp4" muted autoplay loop></video>
+              </div>
+            </div>
+            <div class="list-item item2 flip">
+              <div class="front">
+                <img src="./common/images/main-sustain-list-front1.jpg" alt="">
+              </div>
+              <div class="back">
+                <img src="./common/images/main-sustain-list-back1.jpg" alt="">
+              </div>
+            </div>
+            <div class="list-item item3">
+              <img src="./common/images/main-sustain-img1.jpg" alt="">
+            </div>
+            <div class="list-item item4 flip">
+              <div class="front">
+                <img src="./common/images/main-sustain-list-front2.jpg" alt="">
+              </div>
+              <div class="back">
+                <img src="./common/images/main-sustain-list-back2.jpg" alt="">
+              </div>
+            </div>
+            <div class="list-item item5">
+              <img src="./common/images/main-sustain-img3.jpg" alt="">
+            </div>
+            <div class="list-item item6">
+              <img src="./common/images/main-sustain-img2.jpg" alt="">
+            </div>
+            <div class="list-item item7 flip">
+              <div class="front">
+                <img src="./common/images/main-sustain-list-front3.jpg" alt="">
+              </div>
+              <div class="back">
+                <img src="./common/images/main-sustain-list-back3.jpg" alt="">
+              </div>
+            </div>
+            <div class="list-item item8">
+              <img src="./common/images/main-sustain-desc.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- partnership -->
+      <section class="part-wrap">
+        <div class="inner">
+          <div class="tit-area">
+            <img src="./common/images/main-part-cate.svg" alt="">
+            <img src="./common/images/main-part-tit.svg" alt="">
+          </div>
+          <div class="list-area">
+            <div class="list-item">
+              <p class="tit">자주 묻는 질문</p>
+              <img src="./common/images/main-part-item1.svg" alt="">
+            </div>
+            <div class="list-item">
+              <p class="tit">유지관리 가이드</p>
+              <img src="./common/images/main-part-item2.svg" alt="">
+            </div>
+            <div class="list-item">
+              <p class="tit">A/S 신청&조회</p>
+              <img src="./common/images/main-part-item3.svg" alt="">
+            </div>
+            <div class="list-item">
+              <p class="tit">제품 사용설명서</p>
+              <img src="./common/images/main-part-item4.svg" alt="">
+            </div>
+            <div class="list-item">
+              <p class="tit">서비스 센터 안내</p>
+              <img src="./common/images/main-part-item5.svg" alt="">
+            </div>
+            <div class="list-item">
+              <p class="tit">온라인문의</p>
+              <img src="./common/images/main-part-item6.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- media -->
+      <section class="media-wrap">
+        <div class="inner">
+          <div class="tit-area">
+            <div class="txt-box">
+              <img src="./common/images/main-media-cate.svg" alt="">
+              <img src="./common/images/main-media-tit.svg" alt="">
+            </div>
+            <img src="./common/images/main-media-btn.svg" alt="">
+          </div>
+          <div class="list-area">
+            <div class="list-item">
+              <div class="img-box">
+                <img src="./common/images/main-media-img1.jpg" alt="">
+              </div>
+              <div class="txt-box">
+                <img src="./common/images/main-media-item1.svg" alt="">
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="img-box">
+                <img src="./common/images/main-media-img2.jpg" alt="">
+              </div>
+              <div class="txt-box">
+                <img src="./common/images/main-media-item2.svg" alt="">
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="img-box">
+                <img src="./common/images/main-media-img3.jpg" alt="">
+              </div>
+              <div class="txt-box">
+                <img src="./common/images/main-media-item3.svg" alt="">
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="img-box">
+                <img src="./common/images/main-media-img4.jpg" alt="">
+              </div>
+              <div class="txt-box">
+                <img src="./common/images/main-media-item4.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- floating button -->
+      <div class="floating-btn-wrap">
+        <div class="plus">
+          <a href="javascript:">
+            <img src="./common/images/main-floating-btn1.svg" alt="">
+          </a>
+          <img src="./common/images/main-floating-btn1-pop.svg" alt="">
+        </div>
+        <a href="javascript:" class="go-top">
+          <img src="./common/images/main-floating-btn2.svg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <a href="javascript:">
+        <div class="inner">
+          <img src="./common/images/main-footer-left.png" alt="">
+          <img src="./common/images/main-footer-right.png" alt="">
+        </div>
+      </a>
+    </footer>
+  </body>
+</html>
