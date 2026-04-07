@@ -1,0 +1,171 @@
+/* header */
+header {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  opacity: 1;
+}
+header img {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+header .inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  height: 100px;
+  margin: auto;
+}
+header .inner h1 {
+  position: relative;
+  width: 160px;
+  height: 47px;
+}
+header .inner h1 a {
+  display: block;
+  position: relative;
+  width: 160px;
+  height: 47px;
+}
+header .inner h1 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 47px;
+}
+header .inner a.gnb {
+  display: block;
+  position: relative;
+  width: 613px;
+  height: 100px;
+  margin-left: 80px;
+}
+header .inner a.gnb>img {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  margin-top: -12px;
+  z-index: 10;
+}
+header .inner a.gnb .twod {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: -48px;
+  width: 403px;
+}
+header .inner a.gnb .twod>img {
+  position: relative;
+  z-index: 1;
+}
+header .inner a.gnb .thrd {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .inner .util {
+  display: block;
+  position: relative;
+  width: 281px;
+  height: 30px;
+  margin-left: auto;
+}
+header .inner .util>img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header .inner .util .one {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 32px;
+}
+header .inner .util .one>img {
+  position: relative;
+  z-index: 1;
+}
+header .inner .util .two {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 110px;
+  width: 45px;
+  height: 32px;
+}
+header .inner .c {
+  opacity: 0;
+}
+header.hover .w {
+  opacity: 0;
+}
+header.hover .c {
+  opacity: 1;
+}
+
+.fam-pop {
+  position: fixed;
+  top: 0;
+  right: -800px;
+  z-index: 101;
+  height: 100vh;
+}
+.fam-pop img {
+  height: 100%;
+}
+.fam-pop a {
+  position: absolute;
+  top: 105px;
+  right: 59px;
+  width: 40px;
+  height: 40px;
+}
+
+.info-pop {
+  position: fixed;
+  top: -600px;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: 101;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.45);
+}
+.info-pop .xbt {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+}
+
+.dimd {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+/* footer */
+footer a {
+  display: block;
+  position: relative;
+  z-index: 30;
+  background-color: #262626;
+}
+footer a img {
+  display: block;
+  margin: 0 auto;
+}

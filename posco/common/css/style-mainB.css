@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import url(./reset.css);
+
+/* header */
+header {position: fixed; top: -100px; left: 50%; transform: translate(-50%, 0); width: 100%; max-width: 1920px; height: 100px; z-index: 100; opacity: 1;}
+header .inner {display: flex; align-items: center; position: relative; width: 100%; max-width: 1800px; height: 100px; margin: auto;}
+header .inner h1 {position: relative; width: 160px; height: 47px;}
+header .inner h1 a {display: block; position: relative; width: 160px; height: 47px;}
+header .inner h1 a img {position: absolute; top: 0; left: 0; width: 160px; height: 47px;}
+header .inner a.gnb {display: block; position: relative; width: 613px; height: 100px; margin-left: 80px;}
+header .inner a.gnb > img {position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;}
+header .inner a.gnb .twod {display: none; position: absolute; top: 100px; left: -48px; width: 403px;}
+header .inner a.gnb .twod > img {position: relative; z-index: 1;}
+header .inner a.gnb .thrd {position: absolute; top: 0; left: 0;}
+header .inner .util {display: block; position: relative; width: 281px; height: 30px; margin-left: auto;}
+header .inner .util > img {position: absolute; top: 0; right: 0;}
+header .inner .util .one {display: block; position: absolute; top: 0; left: 0; width: 96px; height: 32px;}
+header .inner .util .one > img {position: relative; z-index: 1;}
+header .inner .util .two {display: block; position: absolute; top: 0; left: 163px; width: 32px; height: 32px;}
+header .inner .c {opacity: 0;}
+
+.fam-pop {position: fixed; top: 0; right: -100%; z-index: 101; height: 100vh;}
+.fam-pop img {height: 100%;}
+.fam-pop a {position: absolute; top: 68px; right: 37px; width: 40px; height: 40px;}
+
+.info-pop {display: flex; justify-content: center; align-items: center; position: fixed; top: -600px; left: 0; z-index: 101; width: 100%; height: 600px; background: url("../images/header-info-pop-bg.jpg") no-repeat center center / cover;}
+.info-pop img {width: 100%; max-width: 1920px; margin: 0 auto;}
+.info-pop .xbt {position: absolute; bottom: 0px; left: 50%; transform: translate(-50%, 0); opacity: 0;}
+
+.dimd {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.6); z-index: 100;}
+
+#mainBody {position: relative; width: 100%; background: #fff;}
+
+/* main visual */
+.mainvisual {position: relative; width: 100%;}
+.mainvisual .top {position: fixed; top: 0; left: 0; width: 100%; height: 100vh; transform: translate(0, 0);}
+.mainvisual .top .bg {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.mainvisual .top .bg .mainv-swiper .txt-wrap {position: absolute; top: 0; left: 50%; z-index: 1; transform: translateX(-50%); width: 1800px; height: 100%;}
+.mainvisual .top .bg .mainv-swiper .txt-wrap img {position: absolute; top: 50%; opacity: 0;}
+.mainvisual .top .bg .mainv-swiper .txt-wrap img.left {left: 0; transform: translate(-100px, -50%);}
+.mainvisual .top .bg .mainv-swiper .txt-wrap img.right {right: 140px; transform: translate(100px, -50%);}
+
+.mainvisual .top .bg .mainv-swiper .vid-wrap {position: relative; width: 100vw; height: 100vh;}
+.mainvisual .top .bg .mainv-swiper .vid-wrap::after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6);}
+.mainvisual .top .bg .mainv-swiper .vid-wrap video {width: 100%; height: 100%; object-fit: cover; object-position: center;}
+
+.mainvisual .top .bg .mainv-swiper .swiper-util {position: absolute; top: 50%; left: 50%; z-index: 1; width: 1800px; height: 100%; transform: translate(-50%, -50%);}
+.mainvisual .top .bg .mainv-swiper .swiper-util .btn-wrap {display: flex; align-items: center; position: absolute; top: 50%; right: 0; z-index: 2; width: 99px; height: 50px; transform: translate(100px, -50%); opacity: 0;}
+.mainvisual .top .bg .mainv-swiper .swiper-util .btn-wrap a {position: initial; display: block; width: 50px; height: 50px; margin: 0; transition: .5s ease-out;}
+.mainvisual .top .bg .mainv-swiper .swiper-util .btn-wrap .swiper-button-prev {background: url("../images/main-swiper-prev.svg") no-repeat center center / cover;}
+.mainvisual .top .bg .mainv-swiper .swiper-util .btn-wrap .swiper-button-next {background: url("../images/main-swiper-next.svg") no-repeat center center / cover;}
+.mainvisual .top .bg .mainv-swiper .swiper-util .btn-wrap .swiper-button-prev::after, .mainvisual .top .bg .mainv-swiper .swiper-util .btn-wrap .swiper-button-next::after {display: none;}
+
+.mainvisual .top .bottom-txt {display: flex; justify-content: space-between; position: absolute; bottom: 18px; left: 50%; transform: translate(-50%, 0); width: 1800px; height: 216px; z-index: 1;}
+.mainvisual .top .bottom-txt .posco {display: flex; justify-content: space-between; width: 765px;}
+.mainvisual .top .bottom-txt .holdings {display: flex; justify-content: space-between; width: 981px;}
+.mainvisual .top .bottom-txt p {position: relative; height: 200px; transform: translate(0, 100px); opacity: 0;}
+.mainvisual .top .bottom-txt p img {position: relative; transform: translate(0, 0);}
+
+.mainvisual .bot {position: relative; width: 100%; margin-top: calc(100vh + 20px);}
+.mainvisual .bot p {position: relative; width: 715px; margin: auto;}
+
+
+/* main con 1 */
+.maincon1 {position: relative; width: 100%; height: 100vh; margin-top: -176px;}
+.maincon1 .tit1 {position: absolute; top: calc(50% - 67px); left: 50%; transform: translate(-50%, -50%); width: 710px;}
+.maincon1 .tit2 {position: absolute; top: calc(50% + 83px); left: 50%; transform: translate(-50%, -50%); opacity: 0;}
+
+.maincon1 .video {position: fixed; top: 0; left: 0; transform: translate(0, 1102px); width: 100%; height: 100vh;}
+.maincon1 .video::after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7);}
+.maincon1 .video video {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+
+.maincon1 .lists {position: absolute; top: calc(50% + 906px); left: 50%; transform: translate(-50%, 0); width: 1476px; height: 3494px;}
+.maincon1 .lists > a {position: absolute; width: 500px; height: 600px; overflow: hidden; border-radius: 16px; transition-duration: 0.4s; transition-property: height;}
+.maincon1 .lists > a .bg {position: absolute; top: 0; left: 0; opacity: 0; transition-duration: 0.4s; transition-property: opacity;}
+.maincon1 .lists > a:hover {height: 700px;}
+.maincon1 .lists > a:hover .bg {opacity: 1;}
+.maincon1 .lists > a .inner {position: absolute; width: 500px; height: 600px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.20); transition-duration: 0.4s; transition-property: height;}
+.maincon1 .lists > a:hover .inner {height: 700px; border: 1px solid #05507D;}
+.maincon1 .lists > a .inner .txt1 {position: absolute; top: 50px; left: 50px;}
+.maincon1 .lists > a .inner .icon {position: absolute; bottom: 50px; left: 50px;}
+.maincon1 .lists > a:nth-child(1) {top: 0; right: 0px;}
+.maincon1 .lists > a:nth-child(2) {top: 750px; left: 0;}
+.maincon1 .lists > a:nth-child(3) {top: 1400px; right: 0;}
+.maincon1 .lists > a:nth-child(4) {top: 2150px; left: 0;}
+.maincon1 .lists > a:nth-child(5) {top: 2800px; right: 0;}
+
+
+/* main con 2 */
+.maincon2 {position: relative; width: 100%; background: #fff; padding: 250px 0;}
+.maincon2 .tit {display: flex; justify-content: space-between; align-items: end; position: relative; width: 1476px; margin: auto; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-property: transform, opacity;}
+.maincon2.active .tit {transform: translate(0, 0); opacity: 1;}
+.maincon2 .tit .bts {position: relative; width: 99px; height: 50px; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-property: transform, opacity;}
+.maincon2.active .tit .bts {transform: translate(0, 0); opacity: 1;}
+.maincon2 .tit .bts > a {position: absolute; top: 0; right: 0; opacity: 0.3;}
+.maincon2 .tit .bts > a:nth-child(1) {right: unset; left: 0; transform: rotate(180deg);}
+.maincon2 .tit .bts > a.active {opacity: 1; z-index: 1;}
+.maincon2 .lists {width: 1476px; margin: 100px auto 0;}
+.maincon2 .lists .list-inner {display: flex; justify-content: space-between; position: relative; width: 2616px; transform: translate(0, 0);}
+.maincon2 .lists .list-inner > a {display: block; position: relative; width: 426px; height: 530px; border-radius: 12px; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-property: transform, opacity;}
+.maincon2 .lists .list-inner > a:nth-child(1) {transition-delay: 0.5s;}
+.maincon2 .lists .list-inner > a:nth-child(2) {transition-delay: 0.6s;}
+.maincon2 .lists .list-inner > a:nth-child(3) {transition-delay: 0.7s;}
+.maincon2 .lists .list-inner > a:nth-child(4) {transition-delay: 0.8s;}
+.maincon2 .lists .list-inner > a:nth-child(5) {transition-delay: 0.9s;}
+.maincon2 .lists .list-inner > a:nth-child(6) {transition-delay: 1s;}
+.maincon2.active .lists .list-inner > a {transform: translate(0, 0); opacity: 1;}
+.maincon2 .lists .list-inner > a .img {position: absolute; top: 100px; left: 0; transition-duration: 0.5s; transition-property: top;}
+.maincon2 .lists .list-inner > a .inner {position: absolute; bottom: 0; left: 0; width: 426px; height: 530px; background: #fff; border-radius: 12px; border: 1px solid #E4E4E4; transition-duration: 0.5s; transition-property: height;}
+.maincon2 .lists .list-inner > a .inner .txt1 {position: absolute; top: 56px; left: 56px;}
+.maincon2 .lists .list-inner > a .inner .txt2 {position: absolute; top: 138px; left: 56px; width: 220px; height: 96px; transition-duration: 0.5s; transition-property: top;}
+.maincon2 .lists .list-inner > a .inner .txt2 > img {position: absolute; top: 0; left: 0; transition-duration: 0.5s; transition-duration: opacity;}
+.maincon2 .lists .list-inner > a .inner .txt2 > img.on {opacity: 0;}
+.maincon2 .lists .list-inner > a .inner .txt3 {position: absolute; bottom: 56px; left: 56px;}
+.maincon2 .lists .list-inner > a:hover .inner {height: 300px;}
+.maincon2 .lists .list-inner > a:hover .inner .txt2 {top: 107px;}
+.maincon2 .lists .list-inner > a:hover .inner .txt2 > img.off {opacity: 0;}
+.maincon2 .lists .list-inner > a:hover .inner .txt2 > img.on {opacity: 1;}
+.maincon2 .lists .list-inner > a:hover .img {position: absolute; top: -70px; left: 0;}
+
+
+/* main con 3 */
+.maincon3 {position: relative; width: 100%; height: 100vh; background: #fff; padding: 40px 0;}
+.maincon3 .inner {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 1776px; height: calc(100vh - 80px); max-height: 960px; margin: auto; background: #F4F4F4; border-radius: 24px; overflow: hidden;}
+.maincon3 .inner .txt1 {position: absolute; top: 218px; left: 50%; transform: translate(-50%, 0); width: 136px; height: 24px;}
+.maincon3 .inner .txt1 > img {position: absolute; top: 0; left: 0;}
+.maincon3 .inner .txt1 > img.on {opacity: 0;}
+.maincon3 .inner .txt2 {position: absolute; top: 282px; left: 50%; z-index: 1; transform: translate(-50%, 0); width: 963px;}
+.maincon3 .inner .txt2 img {width: 100%;}
+.maincon3 .inner .tab {position: absolute; bottom: 84px; left: 50%; transform: translate(-50%, 0); width: 381px; height: 40px; opacity: 0;}
+.maincon3 .inner .tab > a {position: relative; width: 381px; height: 40px;}
+.maincon3 .inner .tab > a > img {position: absolute; top: 0; left: 0; opacity: 0;}
+.maincon3 .inner .tab > a > img.off {opacity: 1;}
+.maincon3 .inner .desc-area {position: absolute; top: 60%; left: 50%; transform: translateX(-50%); width: 1300px; height: 146px; opacity: 0;}
+.maincon3 .inner .desc-area .tabcon {display: flex; justify-content: space-between; position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); width: 1300px;}
+.maincon3 .inner .txt-area {position: absolute; bottom: 0px; left: 50%; z-index: 2; transform: translate(-50%, 0); opacity: 0;}
+.maincon3 .inner .bg {position: absolute; top: 255px; left: calc(50% - 70px); z-index: 1; transform: translate(-50%, 0); width: 180px; height: 180px;}
+.maincon3 .inner .bg > img {width: 100%;}
+.maincon3 .inner .gra-area {content: ""; display: block; position: absolute; bottom: 0; left: 0; z-index: 1; width: 100%; height: 300px; background: linear-gradient(0deg, #002990 0%, transparent 100%); opacity: 0;}
+
+
+/* main con 4 */
+.maincon4 {position: relative; width: 100%; background: #fff; padding: 255px 0 0;}
+.maincon4 .tit1 {position: relative; width: 100%; text-align: center; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-property: transform, opacity;}
+.maincon4 .tit2 {position: relative; width: 100%; text-align: center; margin-top: 40px; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-delay: 0.1s; transition-property: transform, opacity;}
+.maincon4 .lists {display: flex; justify-content: space-between; position: relative; width: 1480px; height: 700px; margin: 100px auto 0; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-delay: 0.2s; transition-property: transform, opacity;}
+.maincon4.active .tit1 {transform: translate(0, 0); opacity: 1;}
+.maincon4.active .tit2 {transform: translate(0, 0); opacity: 1;}
+.maincon4.active .lists {transform: translate(0, 0); opacity: 1;}
+.maincon4 .lists > a {display: block; position: relative; width: 480px; height: 700px; overflow: hidden; border-radius: 16px;}
+.maincon4 .lists > a .off {position: absolute; top: 0; left: 0; z-index: 1;}
+.maincon4 .lists > a .txt1 {position: absolute; top: 60px; left: 60px; z-index: 1;}
+.maincon4 .lists > a .txt2 {position: absolute; top: 128px; left: 60px; z-index: 1;}
+.maincon4 .lists > a .txt3 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.maincon4 .lists > a .icon {position: absolute; bottom: 60px; left: 60px; width: 60px; height: 60px; z-index: 1;}
+.maincon4 .lists > a .icon > img {position: absolute; top: 0px; left: 0px;}
+.maincon4 .lists > a .icon > img.c {opacity: 0;}
+
+
+/* main con 5 */
+.maincon5 {position: relative; background-color: #fff;}
+.maincon5 .inner {display: flex; flex-direction: column; justify-content: center; align-items: center; row-gap: 25px; height: 100vh;}
+.maincon5 .inner img {transform: translateY(70px); opacity: 0;}
+.maincon5 .inner img + img {margin-left: 7px;}
+
+
+/* main con 6 */
+.maincon6 {position: relative; width: 100%; padding: 250px 0 0; background: #fff;}
+.maincon6 .inner {display: flex; justify-content: space-between; position: relative; width: 1776px; margin: auto;}
+.maincon6 .inner .txt-area {position: sticky; top: 72px; left: 0; height: calc(100vh - 72px);}
+.maincon6 .inner .txt-area .tit {position: relative; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-property: transform, opacity;}
+.maincon6 .inner .txt-area .txt {position: relative; margin-top: 24px; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-delay: 0.1s; transition-property: transform, opacity;}
+.maincon6 .inner .txt-area .tab {position: relative; margin-top: 40px; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-delay: 0.2s; transition-property: transform, opacity;}
+.maincon6 .inner .txt-area .icon {position: relative; margin-top: 120px; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-delay: 0.3s; transition-property: transform, opacity;}
+.maincon6 .inner .list-area {display: flex; justify-content: space-between; flex-wrap: wrap; position: relative; width: 916px; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-delay: 0.4s; transition-property: transform, opacity;}
+.maincon6.active .inner .txt-area .tit {transform: translate(0, 0); opacity: 1;}
+.maincon6.active .inner .txt-area .txt {transform: translate(0, 0); opacity: 1;}
+.maincon6.active .inner .txt-area .tab {transform: translate(0, 0); opacity: 1;}
+.maincon6.active .inner .txt-area .icon {transform: translate(0, 0); opacity: 1;}
+.maincon6.active .inner .list-area {transform: translate(0, 0); opacity: 1;}
+.maincon6 .inner .list-area > a {display: block; position: relative; margin-bottom: 80px;}
+
+.maincon7 {position: relative; width: 100%; background: #fff; padding: 170px 0 80px;}
+.maincon7 .inner {display: flex; justify-content: space-between; align-items: center; position: relative; width: 1776px; height: 354px; background: #F6F6F6; margin: auto; padding: 0 100px 0 120px;}
+.maincon7 .inner .tit {position: relative; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-property: transform, opacity;}
+.maincon7 .inner .banners {display: flex; align-items: center; column-gap: 8px; position: relative; width: 976px;}
+.maincon7 .inner .banners > a {display: block; position: relative; transform: translate(0, 100px); opacity: 0; transition-duration: 0.5s; transition-property: transform, opacity;}
+.maincon7 .inner .banners > a:nth-child(1) {transition-delay: 0.1s;}
+.maincon7 .inner .banners > a:nth-child(2) {transition-delay: 0.2s;}
+.maincon7 .inner .banners > a:nth-child(3) {transition-delay: 0.3s;}
+.maincon7.active .inner .tit {transform: translate(0, 0); opacity: 1;}
+.maincon7.active .inner .banners > a {transform: translate(0, 0); opacity: 1;}
+
+
+/* footer */
+footer a {display: block; position: relative; background-color: #262626;}
+footer a img {display: block; margin: 0 auto;}

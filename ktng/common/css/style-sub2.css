@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@import url(./reset.css);
+
+.inner {width: 100%; max-width: 1920px; margin: 0 auto;}
+
+header {position: relative; top: -120px; background-color: #fff; z-index: 1;}
+header .inner {display: flex; justify-content: space-between; align-items: center; position: relative; padding: 50px 60px 30px;}
+header .inner nav {position: absolute; top: 57px; left: 50%; transform: translateX(-50%);}
+header .inner .sub-nav {position: absolute; top: 14px; right: 60px;}
+
+.bg-video-area {position: fixed; top: 0; left: 0; z-index: -1; width: 100vw; height: 100vh;}
+.bg-video-area video {width: 100%; height: 100%; object-fit: cover;}
+
+.kv-area {position: relative; height: calc(100vh - 120px);}
+.kv-area img {position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%);}
+
+.list-area {padding-top: 56px; background-color: #fff;}
+.list-area .list-top-box {z-index: 1;}
+.list-area .list-top-box .inner {display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 0 60px; background-color: #fff;}
+
+.list-area .list-top-box .list-util-btn {display: flex; align-items: center; column-gap: 8px; padding: 24px 0;}
+
+.list-area .list-top-box .tag {display: none; width: 100%; padding: 56px 0 142px; cursor: pointer;}
+.list-area .list-top-box .tag img {display: block; margin: 0 auto;}
+
+.list-area .list-box {margin-top: 60px;}
+.list-area .list-box li {display: flex; justify-content: center; column-gap: 40px;}
+.list-area .list-box li + li {margin-top: 120px;}
+.list-area .list-box li img {transform: translateY(100px); opacity: 0;}
+
+.pagination-area {margin-top: 80px; padding-bottom: 200px;}
+.pagination-area img {display: block; margin: 0 auto; transform: translateY(60px); opacity: 0;}
+
+footer {position: relative; background-color: #fff;}
+footer::before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100vw; height: 1px; background-color: #ccc;}
+footer::after {content: ""; display: block; position: absolute; bottom: 0; left: 0; width: 100vw; height: 48px; background-color: #1A1A1A;}
+footer img {display: block; position: relative; z-index: 1; margin: 0 auto;}

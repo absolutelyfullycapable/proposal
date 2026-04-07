@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* font settings - Start */
+@font-face {
+	font-family: 'Pretendard-Black';
+	font-weight: 900;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Black.woff2') format('woff2'), url('../fonts/Pretendard-Black.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard-ExtraBold';
+	font-weight: 800;
+	font-display: swap;
+	src: url('../fonts/Pretendard-ExtraBold.woff2') format('woff2'), url('../fonts/Pretendard-ExtraBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard-Bold';
+	font-weight: 700;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Bold.woff2') format('woff2'), url('../fonts/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard-SemiBold';
+	font-weight: 600;
+	font-display: swap;
+	src: url('../fonts/Pretendard-SemiBold.woff2') format('woff2'), url('../fonts/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard-Medium';
+	font-weight: 500;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Medium.woff2') format('woff2'), url('../fonts/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pretendard-Regular';
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/Pretendard-Regular.woff2') format('woff2'), url('../fonts/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'GeneralSans';
+	font-weight: 600;
+	font-display: swap;
+	src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'), url('../fonts/GeneralSans-Semibold.woff') format('woff');
+}
+
+/* Noto Sans */
+
+/* HankookKR */
+/* @font-face {
+  font-family: "HankookKRLight";
+  src: url(../fonts/HankookKRLight.eot);
+  src: url(../fonts/HankookKRLight.eot?#iefix) format("embedded-opentype"), url(../fonts/HankookKRLight.woff2) format("woff2"), url(../fonts/HankookKRLight.woff) format("woff"), url(../fonts/HankookKRLight.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HankookKRRegular";
+  src: url(../fonts/HankookKRRegular.eot);
+  src: url(../fonts/HankookKRRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/HankookKRRegular.woff2) format("woff2"), url(../fonts/HankookKRRegular.woff) format("woff"), url(../fonts/HankookKRRegular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+} */
+/* HankookKR */
+
+/* Hankook */
+/* @font-face {
+  font-family: "HankookRegular";
+  src: url(../fonts/HankookRegular.eot);
+  src: url(../fonts/HankookRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/HankookRegular.woff2) format("woff2"), url(../fonts/HankookRegular.woff) format("woff"), url(../fonts/HankookRegular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HankookSemibold";
+  src: url(../fonts/HankookSemibold.eot);
+  src: url(../fonts/HankookSemibold.eot?#iefix) format("embedded-opentype"), url(../fonts/HankookSemibold.woff2) format("woff2"), url(../fonts/HankookSemibold.woff) format("woff"), url(../fonts/HankookSemibold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+} */
+/* Hankook */
+
+/* font settings - End */

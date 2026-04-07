@@ -1,0 +1,689 @@
+@charset "UTF-8";
+@import url(./reset.css);
+
+img {
+  display: block;
+}
+
+.scrl-motion {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: .5s ease-out;
+}
+
+.scrl-motion.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* 헤더 */
+header {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  z-index: 100;
+  width: 100%;
+  max-width: 1920px;
+  height: 100px;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  height: 100px;
+  margin: auto;
+}
+
+header .inner h1 {
+  position: relative;
+  width: 160px;
+  height: 47px;
+}
+
+header .inner h1 a {
+  display: block;
+  position: relative;
+  width: 160px;
+  height: 47px;
+}
+
+header .inner h1 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 47px;
+}
+
+header .inner a.gnb {
+  display: block;
+  position: absolute; 
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 725px;
+  height: 100px;
+}
+
+header .inner a.gnb img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+header .inner .util {
+  display: block;
+  position: relative;
+  width: 367px;
+  height: 30px;
+}
+
+header .inner .util > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+header .inner .util .one {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 140px;
+  width: 120px;
+  height: 30px;
+}
+
+header .inner .util .two {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 45px;
+  width: 90px;
+  height: 30px;
+}
+
+header .inner .c {
+  opacity: 0;
+}
+
+/* 키비주얼 */
+.kv-wrap {
+  position: relative;
+  height: 100vh;
+}
+
+.kv-wrap .bg-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.kv-wrap .bg-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
+}
+
+.kv-wrap .txt-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 225px;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.kv-wrap .txt-box .fade-motion {
+  transform: translateY(70px);
+  opacity: 0;
+}
+
+.kv-wrap .txt-box .left {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 40px;
+  width: 367px;
+  height: 100%;
+}
+
+.kv-wrap .txt-box .left img:first-of-type {
+  margin-left: 11px;
+}
+
+.kv-wrap .txt-box .right {
+  transform: translateY(636px);
+}
+
+/* 콘텐츠 */
+.cont-wrap {
+  padding-top: 100vh;
+}
+
+.cont-wrap .inner {
+  width: 1474px;
+  margin: 0 auto;
+}
+
+/* 사업개요 */
+.cont-sec1 .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 200px 0 260px;
+}
+
+.cont-sec1 .desc {
+  transition-delay: .2s;
+}
+
+/* 선박엔진 사업 특장점 */
+.cont-sec2 {
+  margin-top: 200px;
+  padding-bottom: 260px;
+}
+
+.feature-box {
+  position: relative;
+  height: 992px;
+  margin: 40px 0 0;
+  transition-delay: .2s;
+}
+
+.feature-box > div,
+.feature-box > div img {
+  position: absolute;
+}
+
+.feature-box > div:hover {
+  cursor: pointer;
+}
+
+.feature-box .top {
+  top: 0;
+  left: 0;
+}
+
+.feature-box .maintenance {
+  top: 0;
+  left: 744px;
+}
+
+.feature-box .eco {
+  top: 632px;
+  left: 0;
+}
+
+.feature-box .zero {
+  top: 632px;
+  left: 372px;
+}
+
+.feature-box .needs {
+  top: 632px;
+  left: 744px;
+}
+
+.feature-box .trust {
+  top: 429px;
+  left: 1116px;
+}
+
+.feature-box .box {
+  top: 429px;
+  left: 744px;
+  width: 360px;
+  height: 191px;
+  background-color: #F37321;
+}
+
+.feature-box .box:hover {
+  cursor: initial;
+}
+
+.feature-box > div img {
+  opacity: 0;
+  transition: .3s opacity ease-out;
+}
+
+.feature-box > div img.active {
+  opacity: 1;
+}
+
+/* 비디오 영역 */
+.cont-sec3 {
+  padding: 250px 0 300px;
+  background: url("../images/sub-sec3-bg.jpg") no-repeat center center / cover;
+}
+
+.cont-sec3 .tit-box {
+  margin-bottom: 40px;
+}
+
+.cont-sec3 .video-box {
+  position: relative;
+}
+
+.cont-sec3 .video-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -248px;
+  right: -70px;
+  width: 357px;
+  height: 357px;
+  background: url("../images/sub-sec3-vid-img.png") no-repeat center center / cover;
+}
+
+.cont-sec3 .video-box .tab {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.cont-sec3 .video-box video {
+  width: 100%;
+}
+
+.cont-sec3 .video-box .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  box-shadow: 35px 41px 15px 0 rgba(0, 0, 0, 0.00), 23px 26px 14px 0 rgba(0, 0, 0, 0.01), 13px 15px 12px 0 rgba(0, 0, 0, 0.05), 6px 6px 9px 0 rgba(0, 0, 0, 0.09), 1px 2px 5px 0 rgba(0, 0, 0, 0.10);
+  transition: .3s ease-out;
+}
+
+.cont-sec3 .video-box .btn.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* 고객 성공스토리 */
+.cont-sec4 {
+  padding: 250px 0 233px;
+}
+
+.cont-sec4 .top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.cont-sec4 .slide-box {
+  display: flex;
+  column-gap: 24px;
+}
+
+.cont-sec4 .slide-item {
+  width: calc((100% - 24px) / 2);
+}
+
+.cont-sec4 .slide-item .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 725px;
+  padding: 50px;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: .5s ease-out;
+}
+
+.cont-sec4 .slide-item1 .img {
+  background: url("../images/sub-sec4-img1.jpg") no-repeat center center / cover;
+}
+
+.cont-sec4 .slide-item2 .img {
+  background: url("../images/sub-sec4-img2.jpg") no-repeat center center / cover;
+}
+
+.cont-sec4 .slide-box .slide-item1 .img .item-tit,
+.cont-sec4 .slide-box .slide-item1 .img .item-desc,
+.cont-sec4 .slide-box .slide-item2 .img .item-tit,
+.cont-sec4 .slide-box .slide-item2 .img .item-desc {
+  transform: translateY(70px);
+  opacity: 0;
+  transition: .5s ease-out;
+}
+
+.cont-sec4 .slide-item > img {
+  margin-top: 24px;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: .5s ease-out;
+}
+
+.cont-sec4 .slide-box.active .slide-item1 .img {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: .7s;
+}
+
+.cont-sec4 .slide-box.active .slide-item1 .img .item-tit,
+.cont-sec4 .slide-box.active .slide-item1 .img .item-desc {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 1.2s;
+}
+
+.cont-sec4 .slide-box.active .slide-item1 > img {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 1.7s;
+}
+
+.cont-sec4 .slide-box.active .slide-item2 .img {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 2.2s;
+}
+
+.cont-sec4 .slide-box.active .slide-item2 .img .item-tit,
+.cont-sec4 .slide-box.active .slide-item2 .img .item-desc {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 2.7s;
+}
+
+.cont-sec4 .slide-box.active .slide-item2 > img {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 3.2s;
+}
+
+/* 비전 */
+.cont-sec5 {
+  height: 180vh
+}
+
+.cont-sec5 .pin-wrap {
+  position: relative;
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto !important;
+}
+
+.cont-sec5 .tit-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
+
+.cont-sec5 .parallax-box img {
+  position: absolute;
+}
+
+.cont-sec5 .shape1 {
+  top: 100%;
+  left: 1097px;
+}
+
+.cont-sec5 .shape2 {
+  top: 100%;
+  left: 626px;
+  z-index: 1;
+}
+
+.cont-sec5 .shape3 {
+  top: 1411px;
+  left: 951px;
+  z-index: 4;
+}
+
+.cont-sec5 .img1 {
+  top: 100%;
+  left: 236px;
+}
+
+.cont-sec5 .img2 {
+  top: 100%;
+  left: 652px;
+  z-index: 2;
+}
+
+.cont-sec5 .img3 {
+  top: 100%;
+  left: 1112px;
+  z-index: 3;
+}
+
+/* 제품 라인업 */
+.cont-sec6 .prod-wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.cont-sec6 .prod-wrap .prod-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: top .5s ease-out;
+}
+
+.cont-sec6 .prod-wrap .prod-item img {
+  margin: 0 auto;
+}
+
+.cont-sec6 .prod-wrap .prod-item .tit-box .sub-tit {
+  position: relative;
+  width: 172px;
+  height: 19px;
+  margin: 0 auto 40px;
+}
+
+.cont-sec6 .prod-wrap .prod-item .tit-box .sub-tit img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.cont-sec6 .prod-wrap .prod-item .tit-box .sub-tit img.active {
+  opacity: 1;
+}
+
+.cont-sec6 .prod-wrap .prod-item .util-box .download img + img {
+  margin-top: 24px;
+}
+
+.cont-sec6 .prod-wrap .prod-item .util-box .download img.brochure {
+box-shadow: 21px 66px 19px 0 rgba(0, 0, 0, 0.00), 13px 42px 18px 0 rgba(0, 0, 0, 0.01), 8px 24px 15px 0 rgba(0, 0, 0, 0.05), 3px 11px 11px 0 rgba(0, 0, 0, 0.09), 1px 3px 6px 0 rgba(0, 0, 0, 0.10);
+}
+
+.cont-sec6 .prod-wrap .prod-item .util-box .gallery {
+  margin-top: 60px;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 {
+  z-index: 1;
+  padding-top: 77px;
+  background-color: #fff;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .tit-box {
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .tit-box .sub-tit img {
+  opacity: 0;
+  transition: 1s;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .tit-box .sub-tit img.bk {
+  opacity: 1;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .tit-box.active {
+  transform: translateY(180px);
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .tit-box.active .sub-tit img.bk {
+  opacity: 0;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .tit-box.active .sub-tit img.wht {
+  opacity: 1;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .img-box {
+  position: absolute;
+  top: 337px;
+  left: 50%;
+  width: 876px;
+  height: 493px;
+  margin: 0 auto;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .img-box.active {
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .img-box .dimd {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: 1s;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .img-box.active .dimd {
+  opacity: 1;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .util-box {
+  position: absolute;
+  top: 767px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .util-box img:not(.brochure) {
+  opacity: 0;
+  transition: 1s;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .util-box.active {
+  top: 58.5%;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item1 .util-box.active img:not(.brochure) {
+  opacity: 1;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../images/sub-sec6-bg-img2.jpg") no-repeat center center / cover;
+}
+
+.cont-sec6 .prod-wrap .prod-item.item2 .tit-box {
+  margin-bottom: 132px;
+}
+
+/* 라이브러리, 배너, 페이징 */
+.cont-sec7 {
+  margin-top: calc(200vh + 200px);
+}
+
+.cont-sec7 .tit-box {
+  margin-bottom: 60px;
+}
+
+.cont-sec7 .banner-box {
+  margin-top: 99px;
+}
+
+/* 푸터 */
+footer {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background: url("../images/footer-bg.png") no-repeat 0 0 / cover;
+  overflow: hidden;
+}
+
+footer .inner {
+  position: relative;
+  width: 1776px;
+  height: 800px;
+  margin: auto;
+}
+
+footer .inner a {
+  transform: translateY(70px);
+  opacity: 0;
+  transition: .5s ease-out;
+}
+
+footer .inner a.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+footer .inner .bts {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+footer .inner .fam {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+footer .inner .copyright {
+  position: absolute;
+  bottom: 280px;
+  left: 0;
+}
+
+footer .inner .tit {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+}
